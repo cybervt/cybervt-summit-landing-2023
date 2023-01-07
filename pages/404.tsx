@@ -1,7 +1,6 @@
 import React from 'react';
 import {Typography, Stack, Link as MuiLink} from '@mui/material';
 import Link from 'next/link';
-import {PageProps, siteNavigation} from '../src/config';
 
 export default function Custom404() {
 	return (
@@ -13,8 +12,4 @@ export default function Custom404() {
 			</Typography>
 		</Stack>
 	);
-}
-
-export async function getStaticProps() {
-	return {props: siteNavigation.notFound};
 }
