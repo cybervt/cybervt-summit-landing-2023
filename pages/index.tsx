@@ -15,11 +15,11 @@ const studentFaqQuestions = [
 	},
 	{
 		title: '$ ./where',
-		description: 'Summit CTF will take place in-person for undergraduate teams.',
+		description: 'Summit CTF will take place in-person or virtual for undergraduate teams.',
 	},
 	{
 		title: '$ ./prizes',
-		description: 'CyberVT will purchase prizes for the top undergraduate performers.',
+		description: 'CyberVT will purchase prizes for the top undergraduate performers and sponsors have generously offered prizes as well. (More details to come)',
 	},
 	{
 		title: '$ ./eligibility',
@@ -27,11 +27,11 @@ const studentFaqQuestions = [
 	},
 	{
 		title: '$ ./lodging',
-		description: 'CyberVT will pay for two hotel rooms for each university at the Wingate by Wyndham in Christiansburg, VA.',
+		description: 'CyberVT will pay for two hotel rooms for each Senior Military College at the Wingate by Wyndham in Christiansburg, VA. Other academic institutions are recommended to also stay at the Wingate.',
 	},
 	{
 		title: '$ ./team-size',
-		description: 'Teams will be limited to four people. However, multiple teams from the same university can compete (although CyberVT will only pay for two hotel rooms per university).',
+		description: 'Teams will be limited to four people. However, multiple teams from the same university can compete (although CyberVT will only pay for two hotel rooms per SMC).',
 	},
 ];
 
@@ -46,7 +46,7 @@ const nonStudentFaqQuestions = [
 	},
 	{
 		title: '$ ./prizes',
-		description: 'To be determined (pending availability of sponsorship funds).',
+		description: 'To be determined (Exciting stuff coming!).',
 	},
 	{
 		title: '$ ./team-size',
@@ -75,7 +75,7 @@ export default function Index() {
 										.pauseFor(3 * 1000 * 60)
 										.deleteAll()
 										/* Good on you for reading the source code, challenger! */
-										.typeString('Okay, you waited this long. Here\'s a flag for your patience. Submit it during the competition: summitCTF{r43act_Typ3wr1t3r_3ffect_iz_C0ol}')
+										.typeString('Okay, you waited this long. Here\'s a flag for your patience. Submit it during the competition: SummitCTF{r43act_Typ3wr1t3r_3ffect_iz_C0ol}')
 										.start();
 								}}
 							/>
@@ -100,7 +100,7 @@ export default function Index() {
 								</AccordionDetails>
 
 								<AccordionDetails>
-									The main difference between the two tiers is that the non-students will not be able to compete in the king of the hill CTF. We may also not be able to offer prizes for non-students, pending availability of funds from sponsors.
+									The main difference between the two tiers is that the non-students will not be able to compete in the King of the Hill CTF and attend in-person. We may also not be able to offer prizes for non-students, pending availability of funds from sponsors.
 								</AccordionDetails>
 
 								<AccordionDetails>
