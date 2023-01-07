@@ -7,6 +7,10 @@ import Accordion from '@mui/material/Accordion';
 import Image, {StaticImageData} from 'next/image';
 import {competitionDateTime, studentCompetitionDateTime} from '../src/config';
 import summitImg from '../public/img/default-monochrome-white.svg';
+import comptiaImg from '../public/img/Comptia-logo.svg.png';
+import triplePointImg from '../public/img/triplepointsecurity.png';
+import percivalImg from '../public/img/percival-logo-new-no-bg.png';
+import northropImg from '../public/img/northropgrumman.png';
 
 const studentFaqQuestions = [
 	{
@@ -150,6 +154,19 @@ export default function Index() {
 						<Divider variant='inset'/>
 						<Button variant='outlined' target='_blank' href='https://forms.office.com/r/rYFyxVuHTb'>Register for Summit 2023</Button>
 
+					</Stack>
+					<Stack spacing={2}>
+						<Typography variant='h5'>Sponsors</Typography>
+
+						<Divider variant='inset'/>
+						<Typography variant='h6'>Platinum Level</Typography>
+						<Image src={triplePointImg as StaticImageData}/>
+						<Image src={northropImg as StaticImageData}/>
+						<Divider variant='inset'/>
+						<Typography variant='h6'>Contributors</Typography>
+						<Image src={percivalImg as StaticImageData}/>
+						<Image src={comptiaImg as StaticImageData}/>
+						
 					</Stack>
 				</Stack>
 			</Box>
