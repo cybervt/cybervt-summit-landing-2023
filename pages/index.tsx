@@ -160,12 +160,12 @@ export default function Index() {
 
 						<Divider variant='inset'/>
 						<Typography variant='h6'>Platinum Level</Typography>
-						<Image src={triplePointImg as StaticImageData} width='50%' height='70%' />
-						<Image src={northropImg as StaticImageData} width='60%' height='60%' />
+						<Image src={triplePointImg as StaticImageData} />
+						<Image src={northropImg as StaticImageData} />
 						<Divider variant='inset'/>
 						<Typography variant='h6'>Contributors</Typography>
-						<Image src={percivalImg as StaticImageData} width='40%' height='45%' />
-						<Image src={comptiaImg as StaticImageData} width='40%' height='40%' />
+						<Image src={percivalImg as StaticImageData} />
+						<Image src={comptiaImg as StaticImageData} />
 					</Stack>
 				</Stack>
 			</Box>
