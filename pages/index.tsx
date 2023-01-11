@@ -23,19 +23,19 @@ const studentFaqQuestions = [
 	},
 	{
 		title: '$ ./prizes',
-		description: 'CyberVT will purchase prizes for the top undergraduate performers and sponsors have generously offered prizes as well. (More details to come)',
+		description: 'CyberVT will purchase prizes for the top undergraduate performers and sponsors have generously offered prizes as well. The prizes include CompTIA certification vouchers, cash, and swag.',
 	},
 	{
 		title: '$ ./eligibility',
-		description: 'To be eligible for prizes, students must prove their association with an academic institution.',
+		description: 'To be eligible for prizes, students must prove their association with an academic institution. All eligible students will recieve a 10% discount code for the CompTIA store.',
 	},
 	{
 		title: '$ ./lodging',
-		description: 'CyberVT will pay for two hotel rooms for each Senior Military College at the Wingate by Wyndham in Christiansburg, VA. Other academic institutions are recommended to also stay at the Wingate.',
+		description: 'CyberVT encourages all academic institutions to attend in-person. Lodging is not provided by CyberVT and students are encouraged to reach out to your club or school leadership for funding.',
 	},
 	{
 		title: '$ ./team-size',
-		description: 'Teams will be limited to four people. However, multiple teams from the same university can compete (although CyberVT will only pay for two hotel rooms per SMC).',
+		description: 'Teams will be limited to four people. However, multiple teams from the same university can compete.',
 	},
 ];
 
