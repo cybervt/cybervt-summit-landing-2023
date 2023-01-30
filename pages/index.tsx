@@ -11,6 +11,7 @@ import comptiaImg from '../public/img/Comptia-logo.svg.png';
 import triplePointImg from '../public/img/triplepointsecurity.png';
 import percivalImg from '../public/img/percival-logo-new-no-bg.png';
 import northropImg from '../public/img/northropgrumman.png';
+import corpsImg from '../public/img/22_Corps_Shield_White_CMYK.png';
 
 const studentFaqQuestions = [
 	{
@@ -154,6 +155,12 @@ export default function Index() {
 						<Divider variant='inset'/>
 						<Button variant='outlined' target='_blank' href='https://forms.office.com/r/rYFyxVuHTb'>Register for Summit 2023</Button>
 
+					</Stack>
+					<Stack spacing={2}>
+						<Typography variant='h5'>Partners</Typography>
+
+						<Divider variant='inset'/>
+						<Image src={corpsImg as StaticImageData} />
 					</Stack>
 					<Stack spacing={2}>
 						<Typography variant='h5'>Sponsors</Typography>
