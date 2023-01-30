@@ -164,8 +164,10 @@ export default function Index() {
 						<Divider variant='inset'/>
 						<Image src={northropImg as StaticImageData} />
 						<Divider variant='inset'/>
-						<Typography variant='h6'>Contributors</Typography>
+						<Typography variant='h6'>VTCC Cyber Team Sponsors</Typography>
 						<Image src={percivalImg as StaticImageData} />
+						<Divider variant='inset'/>
+						<Typography variant='h6'>Contributors</Typography>
 						<Divider variant='inset'/>
 						<Image src={comptiaImg as StaticImageData} />
 					</Stack>
