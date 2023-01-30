@@ -40,6 +40,11 @@ const studentFaqQuestions = [
 	},
 ];
 
+const imageStyles = {
+  width: '131px',
+  height: '185px'
+};
+
 const nonStudentFaqQuestions = [
 	{
 		title: '$ ./when',
@@ -158,7 +163,7 @@ export default function Index() {
 					</Stack>
 					<Stack spacing={2}>
 						<Typography variant='h5'>Partners</Typography>
-						<Image src={corpsImg as StaticImageData} />
+						<Image src={corpsImg as StaticImageData} style={imageStyles} />
 					</Stack>
 					<Stack spacing={2}>
 						<Typography variant='h5'>Sponsors</Typography>
