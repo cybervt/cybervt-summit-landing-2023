@@ -11,7 +11,7 @@ import comptiaImg from '../public/img/Comptia-logo.svg.png';
 import triplePointImg from '../public/img/triplepointsecurity.png';
 import percivalImg from '../public/img/percival-logo-new-no-bg.png';
 import northropImg from '../public/img/northropgrumman.png';
-import corpsImg from '../public/img/22_Corps_Shield_White_CMYK.png';
+import corpsImg from '../public/img/22_Corps_Shield_FullColor_RGB.png';
 
 const studentFaqQuestions = [
 	{
