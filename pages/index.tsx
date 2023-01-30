@@ -161,8 +161,6 @@ export default function Index() {
 						<Button variant='outlined' target='_blank' href='https://forms.office.com/r/rYFyxVuHTb'>Register for Summit 2023</Button>
 
 					</Stack>
-					<Typography variant='h5'>Partners</Typography>
-					<Image src={corpsImg as StaticImageData} style={imageStyles} />
 					<Stack spacing={2}>
 						<Typography variant='h5'>Sponsors</Typography>
 
@@ -180,6 +178,8 @@ export default function Index() {
 					</Stack>
 				</Stack>
 			</Box>
+			<Typography variant='h5'>Partners</Typography>
+			<Image src={corpsImg as StaticImageData} style={imageStyles} />
 
 		</div>
 	);
