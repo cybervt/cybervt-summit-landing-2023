@@ -158,8 +158,6 @@ export default function Index() {
 					</Stack>
 					<Stack spacing={2}>
 						<Typography variant='h5'>Partners</Typography>
-
-						<Divider variant='inset'/>
 						<Image src={corpsImg as StaticImageData} />
 					</Stack>
 					<Stack spacing={2}>
@@ -175,7 +173,6 @@ export default function Index() {
 						<Image src={percivalImg as StaticImageData} />
 						<Divider variant='inset'/>
 						<Typography variant='h6'>Contributors</Typography>
-						<Divider variant='inset'/>
 						<Image src={comptiaImg as StaticImageData} />
 					</Stack>
 				</Stack>
