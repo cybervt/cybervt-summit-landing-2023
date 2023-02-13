@@ -24,7 +24,7 @@ const studentFaqQuestions = [
 	},
 	{
 		title: '$ ./prizes',
-		description: 'CyberVT will purchase prizes for the top undergraduate performers and sponsors have generously offered prizes as well. The prizes include CompTIA certification vouchers, cash, and swag.',
+		description: 'CyberVT has over $2,500 in prizes for the top performing student teams. Prizes include swag, CompTIA exam vouchers, and cash!',
 	},
 	{
 		title: '$ ./eligibility',
