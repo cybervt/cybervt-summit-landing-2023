@@ -1,17 +1,90 @@
-import {Typography, Stack, Link as MuiLink, Box, Button, AccordionSummary, AccordionDetails, Radio, RadioGroup, FormControlLabel, FormControl, FormLabel, Divider} from '@mui/material';
+import { Typography, Stack, Link as MuiLink, Box, Button, AccordionSummary, AccordionDetails, Radio, RadioGroup, FormControlLabel, FormControl, FormLabel, Divider, Grid, TableContainer, TableHead, TableRow, TableCell, Table, Paper, TableBody } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import React from 'react';
 import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
 import Accordion from '@mui/material/Accordion';
-import Image, {StaticImageData} from 'next/image';
-import {competitionDateTime, studentCompetitionDateTime} from '../src/config';
+import Image, { StaticImageData } from 'next/image';
+import { competitionDateTime, studentCompetitionDateTime } from '../src/config';
 import summitImg from '../public/img/default-monochrome-white.svg';
 import comptiaImg from '../public/img/Comptia-logo.svg.png';
 import triplePointImg from '../public/img/triplepointsecurity.png';
 import percivalImg from '../public/img/percival-logo-new-no-bg.png';
 import northropImg from '../public/img/northropgrumman.png';
 import corpsImg from '../public/img/22_Corps_Shield_FullColor_RGB.png';
+
+const scheduleData = [
+	{
+		date: 'April 15, 2023 (In-person)',
+		events: [
+			{
+				time: '8-9 AM',
+				activity: 'Reception/Breakfast',
+				details: 'Bagels, coffee, and donuts provided. Breakfast at hotel recommended, if possible',
+			},
+			{
+				time: '8-8:30 AM',
+				activity: 'Welcome / Format Overview',
+				details: '',
+			},
+			{
+				time: '8:35-9:35 AM',
+				activity: 'Speaker Event',
+				details: 'Stephanie Travis, Virginia Tech Hume Center',
+			},
+			{
+				time: '9:35-11 PM',
+				activity: 'Percival Engineering and Triple Point Security',
+				details: '',
+			},
+			{
+				time: '11am-12pm',
+				activity: 'Northrop Grumman',
+				details: 'Intro and Northrop Grumman Xetron 101, Hack-A-Sat Problem Walkthroughs!',
+			},
+			{
+				time: '12-1 PM',
+				activity: 'Lunch (event sponsored)',
+				details: '',
+			},
+			{
+				time: '1-5 PM',
+				activity: 'King of the Hill CTF!',
+				details: 'In-person only, 2 rounds x 2 machines, Each round end will have the machine reset',
+			},
+			{
+				time: '5:30-8 PM',
+				activity: 'Event Dinner',
+				details: 'Sponsored by CyberVT',
+			},
+		],
+	},
+	{
+		date: 'April 16, 2023 (Virtual + In-person)',
+		events: [
+			{
+				time: '7am-7:45am',
+				activity: 'Reception/Breakfast',
+				details: 'Bagels, coffee, and donuts provided. Breakfast at hotel recommended, if possible',
+			},
+			{
+				time: '8am-8:50am',
+				activity: 'Alumni Panel',
+				details: 'Former Virginia Tech graduates in the Cybersecurity workforce',
+			},
+			{
+				time: '9am-5pm',
+				activity: 'Jeopardy Style CTF',
+				details: '',
+			},
+			{
+				time: '5:30pm-6pm',
+				activity: 'Closing/Awards Ceremony',
+				details: '',
+			},
+		],
+	},
+];
 
 const studentFaqQuestions = [
 	{
@@ -41,8 +114,8 @@ const studentFaqQuestions = [
 ];
 
 const imageStyles = {
-  width: '131px',
-  height: '185px'
+	width: '131px',
+	height: '185px'
 };
 
 const nonStudentFaqQuestions = [
@@ -73,12 +146,12 @@ export default function Index() {
 				maxWidth='lg'
 				p={8}
 				flexGrow={1}
-				sx={{margin: '0 auto'}}
+				sx={{ margin: '0 auto' }}
 			>
 				<Stack spacing={6}>
 					<Box textAlign='center'>
-						<Image src={summitImg as StaticImageData}/>
-						<Typography variant='h4' fontFamily='monospace' style={{overflowWrap: 'break-word'}}>
+						<Image src={summitImg as StaticImageData} />
+						<Typography variant='h4' fontFamily='monospace' style={{ overflowWrap: 'break-word' }}>
 							<Typewriter
 								onInit={typewriter => {
 									typewriter.typeString('Virginia Tech\'s Annual CTF Competition')
@@ -94,12 +167,12 @@ export default function Index() {
 
 					<Stack spacing={2}>
 						<Typography variant='h5'>Frequently Asked Questions</Typography>
-						<Divider variant='inset'/>
+						<Divider variant='inset' />
 
 						<Box>
 							<Accordion>
 								<AccordionSummary
-									expandIcon={<ExpandMoreIcon/>}
+									expandIcon={<ExpandMoreIcon />}
 									aria-controls='panel1a-content'
 									id='panel1a-header'
 								>
@@ -119,7 +192,7 @@ export default function Index() {
 							</Accordion>
 							<Accordion>
 								<AccordionSummary
-									expandIcon={<ExpandMoreIcon/>}
+									expandIcon={<ExpandMoreIcon />}
 									aria-controls='panel1a-content'
 									id='panel1a-header'
 								>
@@ -136,14 +209,14 @@ export default function Index() {
 							</Accordion>
 							<Accordion>
 								<AccordionSummary
-									expandIcon={<ExpandMoreIcon/>}
+									expandIcon={<ExpandMoreIcon />}
 									aria-controls='panel1a-content'
 									id='panel1a-header'
 								>
 									<Typography>Details for Non-Students</Typography>
 								</AccordionSummary>
 								<AccordionDetails>
-									{ nonStudentFaqQuestions.map(it => (
+									{nonStudentFaqQuestions.map(it => (
 										<div key={it.title}>
 											<Typography mb={1} variant='h5' fontFamily='monospace'>{it.title}</Typography>
 											<Typography mb={2}>{it.description}</Typography>
@@ -157,29 +230,136 @@ export default function Index() {
 					<Stack spacing={2}>
 						<Typography variant='h5'>Registration</Typography>
 
-						<Divider variant='inset'/>
+						<Divider variant='inset' />
 						<Button variant='outlined' target='_blank' href='https://forms.office.com/r/rYFyxVuHTb'>Register for Summit 2023</Button>
+					</Stack>
+
+					<Stack spacing={2}>
+						<Typography variant='h5'>Discord Server</Typography>
+
+						<Divider variant='inset' />
+						<Button variant='outlined' target='_blank' href='https://discord.gg/zW9fjpsN7X'>Join us on Discord</Button>
+					</Stack>
+
+					<Stack spacing={2}>
+						<Typography variant='h5'>Official Schedule</Typography>
+
+						<Divider variant='inset' />
+
+						<TableContainer component={Paper}>
+							<Table>
+								{scheduleData.map((day, index) => (
+									<React.Fragment key={index}>
+										<TableHead>
+											<TableRow>
+												<TableCell colSpan={3}>{day.date}</TableCell>
+											</TableRow>
+											<TableRow>
+												<TableCell>Time</TableCell>
+												<TableCell>Activity</TableCell>
+												<TableCell>Details</TableCell>
+											</TableRow>
+										</TableHead>
+										<TableBody>
+											{day.events.map((event, idx) => (
+												<TableRow key={idx}>
+													<TableCell>{event.time}</TableCell>
+													<TableCell>{event.activity}</TableCell>
+													<TableCell>{event.details}</TableCell>
+												</TableRow>
+											))}
+										</TableBody>
+									</React.Fragment>
+								))}
+							</Table>
+						</TableContainer>
 
 					</Stack>
-					<Stack spacing={2}>
-						<Typography variant='h5'>Sponsors</Typography>
 
-						<Divider variant='inset'/>
-						<Typography variant='h6'>Platinum Level</Typography>
-						<Image src={triplePointImg as StaticImageData} />
-						<Divider variant='inset'/>
-						<Image src={northropImg as StaticImageData} />
-						<Divider variant='inset'/>
-						<Typography variant='h6'>VTCC Cyber Team Sponsors</Typography>
-						<Image src={percivalImg as StaticImageData} />
-						<Divider variant='inset'/>
-						<Typography variant='h6'>Contributors</Typography>
-						<Image src={comptiaImg as StaticImageData} />
+					<Stack spacing={2}>
+						<Typography variant='h5'>Platinum Level Sponsors</Typography>
+						<Divider variant='inset' />
+						<Grid container justifyContent='space-evenly' spacing={2}>
+							<Grid item xs={12} md={4}>
+								<Stack spacing={1}>
+									{/* Add logo on its own line. Use 100% width */}
+									<Box display='flex' justifyContent='center' width='100%'>
+										<Image src={northropImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+									</Box>
+									{/* Add name on its own line. Use 100% width */}
+									<MuiLink href='https://northropgrumman.com/' target='_blank' rel='noreferrer'>
+										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+											Northrop Grumman
+										</Typography>
+									</MuiLink>
+									<Typography textAlign='justify'>
+										Northrop Grumman is an American global aerospace and defense technology company. They provide various cybersecurity services to the government.
+									</Typography>
+								</Stack>
+							</Grid>
+
+							<Grid item xs={12} md={4}>
+								<Stack spacing={1}>
+									{/* Add logo on its own line. Use 100% width */}
+									<Box display='flex' justifyContent='center' width='100%'>
+										<Image src={triplePointImg as StaticImageData as StaticImageData} width='300px' height='100%' objectFit='contain' />
+									</Box>
+									{/* Add name on its own line. Use 100% width */}
+									<MuiLink href='https://www.triplepointsecurity.com/' target='_blank' rel='noreferrer'>
+										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+											Triple Point Security
+										</Typography>
+									</MuiLink>
+									<Typography textAlign='justify'>
+										Triple Point Security is a cybersecurity company based in Leesburg, VA. They provide a variety of services to help clients protect their data and systems from cyber threats.
+									</Typography>
+								</Stack>
+							</Grid>
+						</Grid>
+					</Stack>
+					<Stack spacing={2}>
+						<Typography variant='h5'>Partners</Typography>
+						<Divider variant='inset' />
+						<Grid container justifyContent='space-evenly' spacing={2}>
+							<Grid item xs={12} md={4}>
+								<Stack spacing={1}>
+									{/* Add logo on its own line. Use 100% width */}
+									<Box display='flex' justifyContent='center' width='100%'>
+										<Image src={corpsImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+									</Box>
+									{/* Add name on its own line. Use 100% width */}
+									<MuiLink href='https://vtcc.vt.edu' target='_blank' rel='noreferrer'>
+										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+											Virginia Tech Corp of Cadets
+										</Typography>
+									</MuiLink>
+								</Stack>
+							</Grid>
+						</Grid>
+					</Stack>
+					<Stack spacing={2}>
+						<Typography variant='h5'>VTCC Cyber Team Sponsors</Typography>
+						<Divider variant='inset' />
+						<Grid container justifyContent='space-evenly' spacing={2}>
+							<Grid item xs={12} md={4}>
+								<Stack spacing={1}>
+									{/* Add logo on its own line. Use 100% width */}
+									<Box display='flex' justifyContent='center' width='100%'>
+										<Image src={percivalImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+									</Box>
+									{/* Add name on its own line. Use 100% width */}
+									<MuiLink href='https://www.percivaleng.com' target='_blank' rel='noreferrer'>
+										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+											Percival Engineering
+										</Typography>
+									</MuiLink>
+								</Stack>
+							</Grid>
+						</Grid>
 					</Stack>
 				</Stack>
 			</Box>
-			<Typography variant='h5'>Partners</Typography>
-			<Image src={corpsImg as StaticImageData} style={imageStyles} />
+
 
 		</div>
 	);
