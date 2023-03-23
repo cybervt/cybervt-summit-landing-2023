@@ -18,7 +18,7 @@ const scheduleData = [
 		date: 'April 15, 2023 (In-person)',
 		events: [
 			{
-				time: '8-9 AM',
+				time: '7-8 AM',
 				activity: 'Reception/Breakfast',
 				details: 'Bagels, coffee, and donuts provided. Breakfast at hotel recommended, if possible',
 			},
@@ -44,8 +44,8 @@ const scheduleData = [
 			},
 			{
 				time: '12-1 PM',
-				activity: 'Lunch (event sponsored)',
-				details: '',
+				activity: 'Lunch',
+				details: 'Sponsored by CyberVT',
 			},
 			{
 				time: '1-5 PM',
