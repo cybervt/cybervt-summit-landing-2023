@@ -278,7 +278,7 @@ export default function Index() {
 					</Stack>
 
 					<Stack spacing={2}>
-						<Typography variant='h5'>Platinum Level Sponsors</Typography>
+						<Typography variant='h5'>Sponsors</Typography>
 						<Divider variant='inset' />
 						<Grid container justifyContent='space-evenly' spacing={2}>
 							<Grid item xs={12} md={4}>
@@ -294,7 +294,7 @@ export default function Index() {
 										</Typography>
 									</MuiLink>
 									<Typography textAlign='justify'>
-										Northrop Grumman is an American global aerospace and defense technology company. They provide various cybersecurity services to the government.
+										Platinum level sponsor. Northrop Grumman is an American global aerospace and defense technology company. They provide various cybersecurity services to the government.
 									</Typography>
 								</Stack>
 							</Grid>
@@ -312,7 +312,7 @@ export default function Index() {
 										</Typography>
 									</MuiLink>
 									<Typography textAlign='justify'>
-										Triple Point Security is a cybersecurity company based in Leesburg, VA. They provide a variety of services to help clients protect their data and systems from cyber threats.
+										Platinum level sponsor. Triple Point Security is a cybersecurity company based in Leesburg, VA. They provide a variety of services to help clients protect their data and systems from cyber threats.
 									</Typography>
 								</Stack>
 							</Grid>
@@ -330,7 +330,7 @@ export default function Index() {
 										</Typography>
 									</MuiLink>
 									<Typography textAlign='justify'>
-										HII is a global engineering and defense technologies provider, and recognized worldwide as America's largest shipbuilder.
+										Silver level sponsor. HII is a global engineering and defense technologies provider, and recognized worldwide as America's largest shipbuilder.
 									</Typography>
 								</Stack>
 							</Grid>
