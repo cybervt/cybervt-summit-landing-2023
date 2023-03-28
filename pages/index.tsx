@@ -40,7 +40,7 @@ const scheduleData = [
 			},
 			{
 				time: '10:05-11 PM',
-				activity: 'Percival Engineering and Triple Point Security',
+				activity: 'Meet Percival Engineering and Triple Point Security',
 				details: '',
 			},
 			{
