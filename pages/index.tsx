@@ -34,7 +34,12 @@ const scheduleData = [
 				details: 'Stephanie Travis, Virginia Tech Hume Center',
 			},
 			{
-				time: '9:35-11 PM',
+				time: '9:35-10:05 PM',
+				activity: 'Hungtington Ingalls Industries (HII) Talk',
+				details: '',
+			},
+			{
+				time: '10:05-11 PM',
 				activity: 'Percival Engineering and Triple Point Security',
 				details: '',
 			},
