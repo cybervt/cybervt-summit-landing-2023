@@ -39,8 +39,13 @@ const scheduleData = [
 				details: '',
 			},
 			{
-				time: '10:05-11 AM',
-				activity: 'Meet Percival Engineering and Triple Point Security',
+				time: '10:10-10:30 AM',
+				activity: 'Meet Percival Engineering',
+				details: '',
+			},
+			{
+				time: '10:30-11 AM',
+				activity: 'Talk with sponsors: Triple Point Security, Percival Engineering, and HII',
 				details: '',
 			},
 			{
@@ -237,7 +242,7 @@ export default function Index() {
 						<Typography variant='h5'>Registration</Typography>
 
 						<Divider variant='inset' />
-						<Button variant='outlined' target='_blank' href='https://forms.office.com/r/rYFyxVuHTb'>Register for Summit 2023</Button>
+						<Button variant='outlined' target='_blank' href='https://summit.ctfd.io/'>Register for Summit 2023</Button>
 					</Stack>
 
 					<Stack spacing={2}>
