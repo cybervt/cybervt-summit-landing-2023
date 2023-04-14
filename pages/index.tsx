@@ -104,7 +104,7 @@ const studentFaqQuestions = [
 	},
 	{
 		title: '$ ./where',
-		description: 'Summit CTF will take place in-person or virtual for undergraduate teams.',
+		description: 'Summit CTF will take place in-person or virtual for undergraduate teams. In-person should head to Lavery Hall and enter using the doors by Old Turner St. The event will be on the third floor.',
 	},
 	{
 		title: '$ ./prizes',
