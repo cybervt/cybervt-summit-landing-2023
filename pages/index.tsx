@@ -16,7 +16,7 @@ import corpsImg from '../public/img/22_Corps_Shield_FullColor_RGB.png';
 
 const scheduleData = [
 	{
-		date: 'April 15, 2023 (In-person)',
+		date: '(Previous year) April 15, 2023 (In-person)',
 		events: [
 			{
 				time: '7-8 AM',
@@ -71,7 +71,7 @@ const scheduleData = [
 		],
 	},
 	{
-		date: 'April 16, 2023 (Virtual + In-person)',
+		date: '(Previous year) April 16, 2023 (Virtual + In-person)',
 		events: [
 			{
 				time: '7am-7:45am',
@@ -108,11 +108,11 @@ const studentFaqQuestions = [
 	},
 	{
 		title: '$ ./prizes',
-		description: 'CyberVT has over $2,500 in prizes for the top performing student teams. Prizes include swag, CompTIA exam vouchers, and cash!',
+		description: 'Prizes will be released closer to start date.',
 	},
 	{
 		title: '$ ./eligibility',
-		description: 'To be eligible for prizes, students must prove their association with an academic institution. All eligible students will recieve a 10% discount code for the CompTIA store.',
+		description: 'To be eligible for prizes, students must prove their association with an academic institution.',
 	},
 	{
 		title: '$ ./lodging',
