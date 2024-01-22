@@ -16,7 +16,7 @@ import corpsImg from '../public/img/22_Corps_Shield_FullColor_RGB.png';
 
 const scheduleData = [
 	{
-		date: '(Previous year) April 15, 2023 (In-person)',
+		date: 'March 30, 2024 (In-person)',
 		events: [
 			{
 				time: '7-8 AM',
@@ -30,18 +30,18 @@ const scheduleData = [
 			},
 			{
 				time: '8:35-9:35 AM',
-				activity: 'Speaker Event',
-				details: 'Stephanie Travis, Virginia Tech Hume Center',
+				activity: 'Sponsor Talk',
+				details: 'Hear from one of our amazing sponsors!',
 			},
 			{
 				time: '9:35-10:05 AM',
-				activity: 'Hungtington Ingalls Industries (HII) Talk',
-				details: '',
+				activity: 'Lesson 1',
+				details: 'TBD',
 			},
 			{
 				time: '10:10-10:30 AM',
-				activity: 'Meet Percival Engineering',
-				details: '',
+				activity: 'Lesson 2',
+				details: 'TBD',
 			},
 			{
 				time: '10:30-11 AM',
@@ -50,8 +50,8 @@ const scheduleData = [
 			},
 			{
 				time: '11am-12pm',
-				activity: 'Northrop Grumman',
-				details: 'Intro and Northrop Grumman Xetron 101, Hack-A-Sat Problem Walkthroughs!',
+				activity: 'Lesson 3',
+				details: 'TBD',
 			},
 			{
 				time: '12-1 PM',
@@ -60,8 +60,8 @@ const scheduleData = [
 			},
 			{
 				time: '1-5 PM',
-				activity: 'King of the Hill CTF!',
-				details: 'In-person only, 2 rounds x 2 machines, Each round end will have the machine reset',
+				activity: 'Lab Network Opens!',
+				details: 'In-person only',
 			},
 			{
 				time: '5:30-8 PM',
@@ -71,21 +71,21 @@ const scheduleData = [
 		],
 	},
 	{
-		date: '(Previous year) April 16, 2023 (Virtual + In-person)',
+		date: 'March 31, 2024 (In-person)',
 		events: [
 			{
-				time: '7am-7:45am',
+				time: '7:30am-8:30am',
 				activity: 'Reception/Breakfast',
 				details: 'Bagels, coffee, and donuts provided. Breakfast at hotel recommended, if possible',
 			},
 			{
-				time: '8am-8:50am',
-				activity: 'Alumni Panel',
-				details: 'Former Virginia Tech graduates in the Cybersecurity workforce',
+				time: '8:30am-8:55am',
+				activity: 'Sponsor Talk',
+				details: 'Hear from one of our amazing sponsors!',
 			},
 			{
 				time: '9am-5pm',
-				activity: 'Jeopardy Style CTF',
+				activity: 'Lab Network Re-opens',
 				details: '',
 			},
 			{
@@ -104,7 +104,7 @@ const studentFaqQuestions = [
 	},
 	{
 		title: '$ ./where',
-		description: 'Summit CTF will take place in-person or virtual for undergraduate teams. In-person should head to Lavery Hall and enter using the doors by Old Turner St. The event will be on the third floor.',
+		description: 'Summit CTF will take place in-person only. In-person should head to Goodwin Hall and enter using the front doors. The event will be on the first floor.',
 	},
 	{
 		title: '$ ./prizes',
@@ -136,7 +136,7 @@ const nonStudentFaqQuestions = [
 	},
 	{
 		title: '$ ./where',
-		description: 'Summit CTF will take place online for non-students.',
+		description: 'Summit CTF will take place in-person only at the Blacksburg campus.',
 	},
 	{
 		title: '$ ./prizes',
@@ -190,15 +190,15 @@ export default function Index() {
 									<Typography>General Information</Typography>
 								</AccordionSummary>
 								<AccordionDetails>
-									SummitCTF is an annual Capture the Flag (CTF) competition hosted by the Cybersecurity Club at Virginia Tech (CyberVT). The next competition will have two competition tiers: one for undergraduate competitors, and another for non-students.
+									SummitCTF is an annual Capture the Flag (CTF) competition hosted by the Cybersecurity Club at Virginia Tech (CyberVT). The next competition will have two competition tiers: One for experienced students and one for beginners.
 								</AccordionDetails>
 
 								<AccordionDetails>
-									The main difference between the two tiers is that the non-students will not be able to compete in the King of the Hill CTF and attend in-person. We may also not be able to offer prizes for non-students, pending availability of funds from sponsors.
+									The main difference between the two tiers is that the lab network for experienced players will haev Windows Defender active and blue teamers roaming around. There are prizes for both tiers but experienced tier prizes will be better.
 								</AccordionDetails>
 
 								<AccordionDetails>
-									The competition will officially start on {studentCompetitionDateTime.toLocaleDateString()} for students, and the day after for non-students.
+									The competition will officially start on {studentCompetitionDateTime.toLocaleDateString()} and is in-person only.
 								</AccordionDetails>
 							</Accordion>
 							<Accordion>
