@@ -57,7 +57,7 @@ export const siteTitle = 'CyberVT Summit CTF 2024';
 
 /** Competition date & time */
 export const studentCompetitionDateTime = new Date(0);
-studentCompetitionDateTime.setUTCSeconds(1_711_807_200);
+studentCompetitionDateTime.setUTCSeconds(1_711_803_600);
 
 export const competitionDateTime = new Date(0);
-competitionDateTime.setUTCSeconds(1_681_646_400);
+competitionDateTime.setUTCSeconds(1_711_803_600);
