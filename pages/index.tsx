@@ -194,7 +194,7 @@ export default function Index() {
 								</AccordionDetails>
 
 								<AccordionDetails>
-									The main difference between the two tiers is that the lab network for experienced players will haev Windows Defender active and blue teamers roaming around. There are prizes for both tiers but experienced tier prizes will be better.
+									The main difference between the two tiers is that the lab network for experienced players will have Windows Defender active and blue teamers roaming around. There are prizes for both tiers but experienced tier prizes will be better.
 								</AccordionDetails>
 
 								<AccordionDetails>
@@ -207,7 +207,7 @@ export default function Index() {
 									aria-controls='panel1a-content'
 									id='panel1a-header'
 								>
-									<Typography>Details for Undergraduate Students</Typography>
+									<Typography>Details for Students</Typography>
 								</AccordionSummary>
 								<AccordionDetails>
 									{studentFaqQuestions.map(it => (
@@ -242,7 +242,7 @@ export default function Index() {
 						<Typography variant='h5'>Registration</Typography>
 
 						<Divider variant='inset' />
-						<Button variant='outlined' target='_blank' href='https://summit.ctfd.io/'>Register for Summit 2023</Button>
+						<Button variant='outlined' target='_blank' href='https://forms.office.com/r/kipkKXWenU'>Register for Summit 2024</Button>
 					</Stack>
 
 					<Stack spacing={2}>
