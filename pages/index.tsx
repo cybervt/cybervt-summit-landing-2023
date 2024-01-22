@@ -169,7 +169,7 @@ export default function Index() {
 										.pauseFor(3 * 1000 * 60)
 										.deleteAll()
 										/* Good on you for reading the source code, challenger! */
-										.typeString('Okay, you waited this long. Here\'s a flag for your patience. Submit it during the competition: SummitCTF{r43act_Typ3wr1t3r_3ffect_iz_C0ol}')
+										.typeString('Okay, you waited this long. Here\'s a flag for your patience. Submit it during the competition: SummitCTF{G3t_reddy_2_pwn_th3m_411}')
 										.start();
 								}}
 							/>
