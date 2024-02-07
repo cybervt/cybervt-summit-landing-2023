@@ -163,6 +163,7 @@ export default function Index() {
 				<Stack spacing={6}>
 					<Box textAlign='center'>
 						<Image src={summitImg as StaticImageData} />
+						<Typography variant='h4'>Welcome to Hacksburg</Typography>
 						<Typography variant='h4' fontFamily='monospace' style={{ overflowWrap: 'break-word' }}>
 							<Typewriter
 								onInit={typewriter => {
