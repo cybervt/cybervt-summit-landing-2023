@@ -13,6 +13,7 @@ import percivalImg from '../public/img/percival-logo-new-no-bg.png';
 import northropImg from '../public/img/northropgrumman.png';
 import hiiImg from '../public/img/hii.svg';
 import corpsImg from '../public/img/22_Corps_Shield_FullColor_RGB.png';
+import anteanImg from '../public/img/Antean-Final.png';
 
 const scheduleData = [
 	{
@@ -341,6 +342,23 @@ export default function Index() {
 									</MuiLink>
 									<Typography textAlign='justify'>
 										Silver level sponsor. HII is a global engineering and defense technologies provider, and recognized worldwide as America's largest shipbuilder.
+									</Typography>
+								</Stack>
+							</Grid>
+							<Grid item xs={12} md={4}>
+								<Stack spacing={1}>
+									{/* Add logo on its own line. Use 100% width */}
+									<Box display='flex' justifyContent='center' width='100%'>
+										<Image src={anteanImg as StaticImageData as StaticImageData} width='300px' height='100%' objectFit='contain' />
+									</Box>
+									{/* Add name on its own line. Use 100% width */}
+									<MuiLink href='https://anteantech.com/' target='_blank' rel='noreferrer'>
+										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+											Antean Technology
+										</Typography>
+									</MuiLink>
+									<Typography textAlign='justify'>
+										Silver level sponsor. Antean Technology provides simplistically scaled cyber compliance, IT services, and program management solutions with quality, agility, and transparency.
 									</Typography>
 								</Stack>
 							</Grid>
