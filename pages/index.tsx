@@ -37,12 +37,12 @@ const scheduleData = [
 			{
 				time: '9:35-10:05 AM',
 				activity: 'Lesson 1',
-				details: 'TBD',
+				details: 'Intro to Windows Privilege Escalation',
 			},
 			{
 				time: '10:10-10:30 AM',
 				activity: 'Lesson 2',
-				details: 'TBD',
+				details: 'Intro to Active Directory Attacks',
 			},
 			{
 				time: '10:30-11 AM',
@@ -52,7 +52,7 @@ const scheduleData = [
 			{
 				time: '11am-12pm',
 				activity: 'Lesson 3',
-				details: 'TBD',
+				details: 'Learning to setup and use a C2 server',
 			},
 			{
 				time: '12-1 PM',
