@@ -241,10 +241,10 @@ export default function Index() {
 					</Stack>
 
 					<Stack spacing={2}>
-						<Typography variant='h5'>Registration</Typography>
+						<Typography variant='h5'>Registration (Now Closed)</Typography>
 
 						<Divider variant='inset' />
-						<Button variant='outlined' target='_blank' href='https://forms.office.com/r/kipkKXWenU'>Register for Summit 2024</Button>
+						<Button variant='outlined' target='_blank' href='https://cybervt.org/'>Register for Summit 2024</Button>
 					</Stack>
 
 					<Stack spacing={2}>
