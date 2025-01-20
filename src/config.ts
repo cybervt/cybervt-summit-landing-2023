@@ -53,11 +53,11 @@ export const globalContext = React.createContext<GlobalVars>({
 } as GlobalVars);
 
 /** Site title (in <head>) */
-export const siteTitle = 'CyberVT Summit CTF 2024';
+export const siteTitle = 'CyberVT Summit CTF 2025';
 
 /** Competition date & time */
 export const studentCompetitionDateTime = new Date(0);
-studentCompetitionDateTime.setUTCSeconds(1_711_803_600);
+studentCompetitionDateTime.setUTCSeconds(1_744_466_400);
 
 export const competitionDateTime = new Date(0);
-competitionDateTime.setUTCSeconds(1_711_803_600);
+competitionDateTime.setUTCSeconds(1_744_552_800);
