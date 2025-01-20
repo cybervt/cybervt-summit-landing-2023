@@ -49,7 +49,7 @@ const studentFaqQuestions = [
 	},
 	{
 		title: '$ ./prizes',
-		description: 'Prizes will be released closer to start date. Except vouchers, courses, merch, and more.',
+		description: 'Prizes will be released closer to start date. Expect vouchers, courses, merch, and more.',
 	},
 	{
 		title: '$ ./eligibility',
@@ -73,7 +73,7 @@ const nonStudentFaqQuestions = [
 	},
 	{
 		title: '$ ./prizes',
-		description: 'Prizes will be released closer to start date. Except vouchers, courses, merch, and more.',
+		description: 'Prizes will be released closer to start date. Expect vouchers, courses, merch, and more.',
 	},
 	{
 		title: '$ ./eligibility',
