@@ -17,7 +17,7 @@ import anteanImg from '../public/img/Antean-Final.png';
 
 const scheduleData = [
 	{
-		date: 'March 30, 2024 (Virtual/In Person)',
+		date: 'April 12, 2025 (Virtual/In Person)',
 		events: [
 			{
 				time: 'To Be Announced',
@@ -27,7 +27,7 @@ const scheduleData = [
 		],
 	},
 	{
-		date: 'March 31, 2024 (In-person)',
+		date: 'April 13, 2025 (In-person)',
 		events: [
 			{
 				time: 'To Be Announced',
