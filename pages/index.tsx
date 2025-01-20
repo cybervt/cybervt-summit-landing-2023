@@ -17,57 +17,12 @@ import anteanImg from '../public/img/Antean-Final.png';
 
 const scheduleData = [
 	{
-		date: 'March 30, 2024 (In-person)',
+		date: 'March 30, 2024 (Virtual/In Person)',
 		events: [
 			{
-				time: '7-8 AM',
-				activity: 'Reception/Breakfast',
-				details: 'Bagels, coffee, and donuts provided. Breakfast at hotel recommended, if possible',
-			},
-			{
-				time: '8-8:30 AM',
-				activity: 'Welcome / Format Overview',
-				details: '',
-			},
-			{
-				time: '8:35-9:35 AM',
-				activity: 'Sponsor Talk',
-				details: 'Hear from one of our amazing sponsors!',
-			},
-			{
-				time: '9:35-10:05 AM',
-				activity: 'Lesson 1',
-				details: 'Intro to Windows Privilege Escalation',
-			},
-			{
-				time: '10:10-10:30 AM',
-				activity: 'Lesson 2',
-				details: 'Intro to Active Directory Attacks',
-			},
-			{
-				time: '10:30-11 AM',
-				activity: 'Talk with sponsors: Triple Point Security, Percival Engineering, and HII',
-				details: '',
-			},
-			{
-				time: '11am-12pm',
-				activity: 'Lesson 3',
-				details: 'Learning to setup and use a C2 server',
-			},
-			{
-				time: '12-1 PM',
-				activity: 'Lunch',
-				details: 'Sponsored by CyberVT',
-			},
-			{
-				time: '1-5 PM',
-				activity: 'Lab Network Opens!',
-				details: 'In-person only',
-			},
-			{
-				time: '5:30-8 PM',
-				activity: 'Event Dinner',
-				details: 'Sponsored by CyberVT',
+				time: 'To Be Announced',
+				activity: 'To Be Announced',
+				details: 'To Be Announced',
 			},
 		],
 	},
@@ -75,24 +30,9 @@ const scheduleData = [
 		date: 'March 31, 2024 (In-person)',
 		events: [
 			{
-				time: '7:30am-8:30am',
-				activity: 'Reception/Breakfast',
-				details: 'Bagels, coffee, and donuts provided. Breakfast at hotel recommended, if possible',
-			},
-			{
-				time: '8:30am-8:55am',
-				activity: 'Sponsor Talk',
-				details: 'Hear from one of our amazing sponsors!',
-			},
-			{
-				time: '9am-5pm',
-				activity: 'Lab Network Re-opens',
-				details: '',
-			},
-			{
-				time: '5:30pm-6pm',
-				activity: 'Closing/Awards Ceremony',
-				details: '',
+				time: 'To Be Announced',
+				activity: 'To Be Announced',
+				details: 'To Be Announced',
 			},
 		],
 	},
@@ -101,27 +41,19 @@ const scheduleData = [
 const studentFaqQuestions = [
 	{
 		title: '$ ./when',
-		description: 'Day 1 of Summit CTF begins ' + studentCompetitionDateTime.toLocaleDateString() + ' at ' + studentCompetitionDateTime.toLocaleTimeString() + ' and lasts for two days.',
+		description: 'Summit CTF begins ' + studentCompetitionDateTime.toLocaleDateString() + ' at ' + studentCompetitionDateTime.toLocaleTimeString() + ' and lasts for 24 hours.',
 	},
 	{
 		title: '$ ./where',
-		description: 'Summit CTF will take place in-person only. In-person should head to Goodwin Hall and enter using the front doors. The event will be on the first floor.',
+		description: 'Virtual.',
 	},
 	{
 		title: '$ ./prizes',
-		description: 'Prizes will be released closer to start date.',
+		description: 'Prizes will be released closer to start date. Except vouchers, courses, merch, and more.',
 	},
 	{
 		title: '$ ./eligibility',
-		description: 'To be eligible for prizes, students must prove their association with an academic institution.',
-	},
-	{
-		title: '$ ./lodging',
-		description: 'CyberVT encourages all academic institutions to attend in-person. Lodging is not provided by CyberVT and students are encouraged to reach out to your club or school leadership for funding.',
-	},
-	{
-		title: '$ ./team-size',
-		description: 'Teams will be limited to four people. However, multiple teams from the same university can compete.',
+		description: 'No eligibility requirements.',
 	},
 ];
 
@@ -133,20 +65,29 @@ const imageStyles = {
 const nonStudentFaqQuestions = [
 	{
 		title: '$ ./when',
-		description: 'Summit CTF begins ' + competitionDateTime.toLocaleDateString() + ' at ' + competitionDateTime.toLocaleTimeString() + '.',
+		description: 'The in person competition will take place April 13th.',
 	},
 	{
 		title: '$ ./where',
-		description: 'Summit CTF will take place in-person only at the Blacksburg campus.',
+		description: 'The in person portion of the competition will be hosted on the Virginia Tech Campus, exact location will be shared at a later time.',
 	},
 	{
 		title: '$ ./prizes',
-		description: 'To be determined (Exciting stuff coming!).',
+		description: 'Prizes will be released closer to start date. Except vouchers, courses, merch, and more.',
+	},
+	{
+		title: '$ ./eligibility',
+		description: 'Current student at an academic university.',
+	},
+	{
+		title: '$ ./lodging',
+		description: 'CyberVT encourages all academic institutions to attend in-person. Lodging is not provided by CyberVT and students are encouraged to reach out to your club or school leadership for funding.',
 	},
 	{
 		title: '$ ./team-size',
-		description: 'Teams will be limited to four people.',
+		description: 'Teams will be limited to five people. However, multiple teams from the same university can compete.',
 	},
+
 ];
 
 export default function Index() {
@@ -171,7 +112,7 @@ export default function Index() {
 										.pauseFor(3 * 1000 * 60)
 										.deleteAll()
 										/* Good on you for reading the source code, challenger! */
-										.typeString('Okay, you waited this long. Here\'s a flag for your patience. Submit it during the competition: SummitCTF{G3t_reddy_2_pwn_th3m_411}')
+										.typeString('Okay, you waited this long. Here\'s a flag for your patience. Submit it during the competition: SummitCTF{1_4m_n0t_Us1ng_L4st_Yrs_flag}')
 										.start();
 								}}
 							/>
@@ -192,15 +133,15 @@ export default function Index() {
 									<Typography>General Information</Typography>
 								</AccordionSummary>
 								<AccordionDetails>
-									SummitCTF is an annual Capture the Flag (CTF) competition hosted by the Cybersecurity Club at Virginia Tech (CyberVT). The next competition will have two competition tiers: One for experienced students and one for beginners.
+									SummitCTF is an annual Capture the Flag (CTF) competition hosted by the Cybersecurity Club at Virginia Tech (CyberVT). The next competition will have two events, one virtual and one in person.
 								</AccordionDetails>
 
 								<AccordionDetails>
-									The main difference between the two tiers is that the lab network for experienced players will have Windows Defender active and blue teamers roaming around. There are prizes for both tiers but experienced tier prizes will be better.
+									The virtual event will be a standard jeopardy style CTF, with some unique more realistic challenges. The in person event will be a attack defense event with competitors fighting each other for control.
 								</AccordionDetails>
 
 								<AccordionDetails>
-									The competition will officially start on {studentCompetitionDateTime.toLocaleDateString()} and is in-person only.
+									The virtual competition will officially start on {studentCompetitionDateTime.toLocaleDateString()} and last 24 hours.
 								</AccordionDetails>
 							</Accordion>
 							<Accordion>
@@ -209,7 +150,7 @@ export default function Index() {
 									aria-controls='panel1a-content'
 									id='panel1a-header'
 								>
-									<Typography>Details for Students</Typography>
+									<Typography>Details For Virtual Event</Typography>
 								</AccordionSummary>
 								<AccordionDetails>
 									{studentFaqQuestions.map(it => (
@@ -226,7 +167,7 @@ export default function Index() {
 									aria-controls='panel1a-content'
 									id='panel1a-header'
 								>
-									<Typography>Details for Non-Students</Typography>
+									<Typography>Details For In Person Event</Typography>
 								</AccordionSummary>
 								<AccordionDetails>
 									{nonStudentFaqQuestions.map(it => (
@@ -241,10 +182,10 @@ export default function Index() {
 					</Stack>
 
 					<Stack spacing={2}>
-						<Typography variant='h5'>Registration (Now Closed)</Typography>
+						<Typography variant='h5'>Registration</Typography>
 
 						<Divider variant='inset' />
-						<Button variant='outlined' target='_blank' href='https://cybervt.org/'>Register for Summit 2024</Button>
+						<Button variant='outlined' target='_blank' href='https://forms.office.com/Pages/ResponsePage.aspx?id=hGiVYK0Q-kCGPU8yweOjemyRXAedrFJKug2Tcw5CJHFURVMxWDBUMlRQUzZZSVhQSTY0RjY0SzFWRi4u/'>Register for Summit 2024</Button>
 					</Stack>
 
 					<Stack spacing={2}>
