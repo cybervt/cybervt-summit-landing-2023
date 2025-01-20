@@ -185,7 +185,7 @@ export default function Index() {
 						<Typography variant='h5'>Registration</Typography>
 
 						<Divider variant='inset' />
-						<Button variant='outlined' target='_blank' href='https://forms.office.com/Pages/ResponsePage.aspx?id=hGiVYK0Q-kCGPU8yweOjemyRXAedrFJKug2Tcw5CJHFURVMxWDBUMlRQUzZZSVhQSTY0RjY0SzFWRi4u/'>Register for Summit 2024</Button>
+						<Button variant='outlined' target='_blank' href='https://forms.office.com/Pages/ResponsePage.aspx?id=hGiVYK0Q-kCGPU8yweOjemyRXAedrFJKug2Tcw5CJHFURVMxWDBUMlRQUzZZSVhQSTY0RjY0SzFWRi4u'>Register for Summit 2024</Button>
 					</Stack>
 
 					<Stack spacing={2}>
