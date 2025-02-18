@@ -15,28 +15,159 @@ import hiiImg from '../public/img/hii.svg';
 import corpsImg from '../public/img/22_Corps_Shield_FullColor_RGB.png';
 import anteanImg from '../public/img/Antean-Final.png';
 
-const scheduleData = [
-	{
-		date: 'April 12, 2025 (Virtual/In Person)',
-		events: [
-			{
-				time: 'To Be Announced',
-				activity: 'To Be Announced',
-				details: 'To Be Announced',
-			},
-		],
-	},
-	{
-		date: 'April 13, 2025 (In-person)',
-		events: [
-			{
-				time: 'To Be Announced',
-				activity: 'To Be Announced',
-				details: 'To Be Announced',
-			},
-		],
-	},
-];
+const scheduleData = [ 
+
+	{ 
+
+		date: 'April 12th, 2025 (In-person & Virtual)', 
+
+		events: [ 
+
+			{ 
+
+				time: '7-8 AM', 
+
+				activity: 'Reception/Breakfast', 
+
+				details: 'Bagels and coffee are provided to in-person attendees', 
+
+			}, 
+
+			{ 
+
+				time: '8-8:30 AM', 
+
+				activity: 'Welcome / Format Overview', 
+
+				details: '', 
+
+			}, 
+
+			{ 
+
+				time: '8:35-10:00 AM', 
+
+				activity: 'Sponsor Talks', 
+
+				details: 'Hear from our amazing sponsors!', 
+
+			}, 
+
+			{ 
+
+				time: '10:00 AM-5:00 PM', 
+
+				activity: 'Jeopardy Style CTF (Virtual Option Available)', 
+
+				details: 'In Person Rooms Open', 
+
+			}, 
+
+			{ 
+
+				time: '5:00 PM-7:30 AM', 
+
+				activity: 'Jeopardy Style CTF (Virtual Option Available)', 
+
+				details: 'In Person Rooms Closed', 
+
+			}, 
+
+		], 
+
+	}, 
+
+	{ 
+
+		date: 'April 13th, 2025 (In-person)', 
+
+		events: [ 
+
+			{ 
+
+				time: '7:30 AM-10:00 AM ', 
+
+				activity: 'Jeopardy Style CTF (Virtual Option Available)', 
+
+				details: 'In Person Rooms Open ', 
+
+			}, 
+
+			{ 
+
+				time: '7:30am-8:00am', 
+
+				activity: 'Reception/Breakfast', 
+
+				details: 'Bagels, coffee, and donuts provided. Breakfast at hotel recommended, if possible', 
+
+			}, 
+
+			{ 
+
+				time: '8:30am-9:00am', 
+
+				activity: 'Sponsor Talks', 
+
+				details: 'Hear from our amazing sponsors!', 
+
+			}, 
+
+			{ 
+
+				time: '10:00AM-11:30AM', 
+
+				activity: 'Prize Ceremony/Walkthroughs', 
+
+				details: 'Get cool prizes and hear about that challenge you got stuck on (and lunch)', 
+
+			}, 
+
+			{ 
+
+				time: '11:30am-12:00pm', 
+
+				activity: 'Castle Competition Explanation', 
+
+				details: 'Brief on the Purple Team competition (in person only)', 
+
+			}, 
+
+			{ 
+
+				time: '12:00pm-4:30pm', 
+
+				activity: 'Castle Competition', 
+
+				details: 'Purple Team competition (in person only)', 
+
+			}, 
+
+			{ 
+
+				time: '4:30pm-5:00pm', 
+
+				activity: 'Castle Competition Award Ceremony', 
+
+				details: 'Cool prizes (in person only)', 
+
+			}, 
+
+			{ 
+
+				time: '5pm-on', 
+
+				activity: 'Join us for dinner in Blacksburg', 
+
+				details: '', 
+
+			}, 
+
+		], 
+
+	}, 
+
+]; 
 
 const studentFaqQuestions = [
 	{
