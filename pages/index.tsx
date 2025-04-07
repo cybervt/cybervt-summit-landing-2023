@@ -405,7 +405,7 @@ export default function Index() {
                 </Box>
                 <MuiLink href='https://phantomsec.tools/' target='_blank' rel='noreferrer'>
                     <Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
-                        Phantom Security Group
+                        Phantom Security
                     </Typography>
                 </MuiLink>
                 <Typography textAlign='justify'>
