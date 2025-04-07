@@ -14,6 +14,8 @@ import northropImg from '../public/img/northropgrumman.png';
 import corpsImg from '../public/img/22_Corps_Shield_FullColor_RGB.png';
 import anteanImg from '../public/img/Antean-Final.png';
 import phantomImg from '../public/img/PhantomImg.png';
+import tcmSecurityImg from '../public/img/TCMSecurityImg.png';
+import comptiaImg from '../public/img/Comptia-logo.svg.png';
 
 const scheduleData = [ 
 
@@ -362,90 +364,106 @@ export default function Index() {
 					</Stack>
 
 <Stack spacing={2}>
-                        <Typography variant='h5'>Sponsors</Typography>
-                        <Divider variant='inset' />
-                        <Grid container justifyContent='space-evenly' spacing={2}>
-                            <Grid item xs={12} md={4}>
-                                <Stack spacing={1}>
-                                    <Box display='flex' justifyContent='center' width='100%'>
-                                        <Image src={northropImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
-                                    </Box>
-                                    <MuiLink href='https://northropgrumman.com/' target='_blank' rel='noreferrer'>
-                                        <Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
-                                            Northrop Grumman
-                                        </Typography>
-                                    </MuiLink>
-                                    <Typography textAlign='justify'>
-                                        Platinum level sponsor. Northrop Grumman is an American global aerospace and defense technology company. They provide various cybersecurity services to the government.
-                                    </Typography>
-                                </Stack>
-                            </Grid>
+    <Typography variant='h5'>Sponsors</Typography>
+    <Divider variant='inset' />
+    <Grid container justifyContent='space-evenly' spacing={2}>
+        <Grid item xs={12} md={4}>
+            <Stack spacing={1}>
+                <Box display='flex' justifyContent='center' width='100%'>
+                    <Image src={triplePointImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+                </Box>
+                <MuiLink href='https://www.triplepointsecurity.com/' target='_blank' rel='noreferrer'>
+                    <Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+                        Triple Point Security
+                    </Typography>
+                </MuiLink>
+                <Typography textAlign='justify'>
+                    Platinum level sponsor. Triple Point Security is a cybersecurity company based in Leesburg, VA. They provide a variety of services to help clients protect their data and systems from cyber threats.
+                </Typography>
+            </Stack>
+        </Grid>
 
-                            <Grid item xs={12} md={4}>
-                                <Stack spacing={1}>
-                                    <Box display='flex' justifyContent='center' width='100%'>
-                                        <Image src={triplePointImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
-                                    </Box>
-                                    <MuiLink href='https://www.triplepointsecurity.com/' target='_blank' rel='noreferrer'>
-                                        <Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
-                                            Triple Point Security
-                                        </Typography>
-                                    </MuiLink>
-                                    <Typography textAlign='justify'>
-                                        Platinum level sponsor. Triple Point Security is a cybersecurity company based in Leesburg, VA. They provide a variety of services to help clients protect their data and systems from cyber threats.
-                                    </Typography>
-                                </Stack>
-                            </Grid>
+        <Grid item xs={12} md={4}>
+            <Stack spacing={1}>
+                <Box display='flex' justifyContent='center' width='100%'>
+                    <Image src={percivalImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+                </Box>
+                <MuiLink href='https://www.percivaleng.com' target='_blank' rel='noreferrer'>
+                    <Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+                        Percival Engineering
+                    </Typography>
+                </MuiLink>
+                <Typography textAlign='justify'>
+                    Platinum level sponsor. Percival Engineering is a people first company focused on cyber, embedded, and critical/operational technology.
+                </Typography>
+            </Stack>
+        </Grid>
 
-                            <Grid item xs={12} md={4}>
-                                <Stack spacing={1}>
-                                    <Box display='flex' justifyContent='center' width='100%'>
-                                        <Image src={anteanImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
-                                    </Box>
-                                    <MuiLink href='https://anteantech.com/' target='_blank' rel='noreferrer'>
-                                        <Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
-                                            Antean Technology
-                                        </Typography>
-                                    </MuiLink>
-                                    <Typography textAlign='justify'>
-                                        Silver level sponsor. Antean Technology provides simplistically scaled cyber compliance, IT services, and program management solutions with quality, agility, and transparency.
-                                    </Typography>
-                                </Stack>
-                            </Grid>
+        <Grid item xs={12} md={4}>
+            <Stack spacing={1}>
+                <Box display='flex' justifyContent='center' width='100%'>
+                    <Image src={phantomImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+                </Box>
+                <MuiLink href='https://phantomsec.tools/' target='_blank' rel='noreferrer'>
+                    <Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+                        Phantom Security Group
+                    </Typography>
+                </MuiLink>
+                <Typography textAlign='justify'>
+                    Silver level sponsor. Phantom Security Group is founded by 3 recent Virginia Tech Graduates and develops elite Red Teaming tools such as EvadeX, ApeX, and Phantom Labs.
+                </Typography>
+            </Stack>
+        </Grid>
 
-                            <Grid item xs={12} md={4}>
-                                <Stack spacing={1}>
-                                    <Box display='flex' justifyContent='center' width='100%'>
-                                        <Image src={percivalImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
-                                    </Box>
-                                    <MuiLink href='https://www.percivaleng.com' target='_blank' rel='noreferrer'>
-                                        <Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
-                                            Percival Engineering
-                                        </Typography>
-                                    </MuiLink>
-                                    <Typography textAlign='justify'>
-                                        Silver level sponsor. Percival Engineering is a people first company focused on cyber, embedded, and critical/operational technology.
-                                    </Typography>
-                                </Stack>
-                            </Grid>
+        <Grid item xs={12} md={4}>
+            <Stack spacing={1}>
+                <Box display='flex' justifyContent='center' width='100%'>
+                    <Image src={anteanImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+                </Box>
+                <MuiLink href='https://anteantech.com/' target='_blank' rel='noreferrer'>
+                    <Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+                        Antean Technology
+                    </Typography>
+                </MuiLink>
+                <Typography textAlign='justify'>
+                    Silver level sponsor. Antean Technology provides simplistically scaled cyber compliance, IT services, and program management solutions with quality, agility, and transparency.
+                </Typography>
+            </Stack>
+        </Grid>
 
-                            <Grid item xs={12} md={4}>
-                                <Stack spacing={1}>
-                                    <Box display='flex' justifyContent='center' width='100%'>
-                                        <Image src={phantomImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
-                                    </Box>
-                                    <MuiLink href='https://phantomsec.tools/' target='_blank' rel='noreferrer'>
-                                        <Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
-                                            Phantom Security Group
-                                        </Typography>
-                                    </MuiLink>
-                                    <Typography textAlign='justify'>
-                                        Silver level sponsor. Phantom Security Group is founded by 3 recent Virginia Tech Graduates and develops elite Red Teaming tools such as EvadeX, ApeX, and Phantom Labs.
-                                    </Typography>
-                                </Stack>
-                            </Grid>
-                        </Grid>
-                    </Stack>
+        <Grid item xs={12} md={4}>
+            <Stack spacing={1}>
+                <Box display='flex' justifyContent='center' width='100%'>
+                    <Image src={comptiaImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+                </Box>
+                <MuiLink href='https://www.comptia.org/' target='_blank' rel='noreferrer'>
+                    <Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+                        CompTIA
+                    </Typography>
+                </MuiLink>
+                <Typography textAlign='justify'>
+                    Silver level sponsor.
+                </Typography>
+            </Stack>
+        </Grid>
+
+        <Grid item xs={12} md={4}>
+            <Stack spacing={1}>
+                <Box display='flex' justifyContent='center' width='100%'>
+                    <Image src={tcmSecurityImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+                </Box>
+                <MuiLink href='https://tcm-sec.com/' target='_blank' rel='noreferrer'>
+                    <Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+                        TCM Security
+                    </Typography>
+                </MuiLink>
+                <Typography textAlign='justify'>
+                    Silver level sponsor.
+                </Typography>
+            </Stack>
+        </Grid>
+    </Grid>
+</Stack>
                 </Stack>
             </Box>
         </div>
