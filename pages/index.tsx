@@ -15,7 +15,6 @@ import corpsImg from '../public/img/22_Corps_Shield_FullColor_RGB.png';
 import anteanImg from '../public/img/Antean-Final.png';
 import phantomImg from '../public/img/PhantomImg.png';
 import tcmSecurityImg from '../public/img/TCMSecurityImg.png';
-import comptiaImg from '../public/img/Comptia-logo.svg.png';
 
 const scheduleData = [ 
 
