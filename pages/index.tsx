@@ -215,10 +215,10 @@ export default function Index() {
 					</Stack>
 
 					<Stack spacing={2}>
-						<Typography variant='h5'>Registration Coming Soon</Typography>
+						<Typography variant='h5'>Registration</Typography>
 
 						<Divider variant='inset' />
-						<Button variant='outlined' target='_blank' href='https://forms.office.com/Pages/ResponsePage.aspx?id=hGiVYK0Q-kCGPU8yweOjetZwjjQal5JLkE9gRGnwggBURDdDWVoyN1BTTEM0MUYzRjdERTdCQkpGRy4u'>Register for Summit 2025</Button>
+						<Button variant='outlined' target='_blank' href='https://forms.office.com/Pages/ResponsePage.aspx?id=hGiVYK0Q-kCGPU8yweOjetZwjjQal5JLkE9gRGnwggBURDdDWVoyN1BTTEM0MUYzRjdERTdCQkpGRy4u'>Register for Summit 2026</Button>
 					</Stack>
 
 					<Stack spacing={2}>
