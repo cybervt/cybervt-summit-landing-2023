@@ -7,6 +7,7 @@ import Accordion from '@mui/material/Accordion';
 import Image, { StaticImageData } from 'next/image';
 import { competitionDateTime, studentCompetitionDateTime } from '../src/config';
 import summitImg from '../public/img/default-monochrome-white.svg';
+import hacktheairportImg from '../public/img/hacktheairport.png';
 import comptiaImg from '../public/img/Comptia-logo.svg.png';
 import triplePointImg from '../public/img/triplepointsecurity.png';
 import percivalImg from '../public/img/percival-logo-new-no-bg.png';
@@ -16,72 +17,72 @@ import anteanImg from '../public/img/Antean-Final.png';
 import phantomImg from '../public/img/PhantomImg.png';
 import tcmSecurityImg from '../public/img/TCMSecurityImg.png';
 
-const scheduleData = [ 
-	{ 
-		date: 'April 12th, 2025 (In-person & Virtual)', 
-		events: [ 
-			{ 
-				time: '8:00-8:30 AM', 
-				activity: 'Welcome / Format Overview', 
-				details: '', 
-			}, 
-			{ 
-				time: '8:35-10:00 AM', 
-				activity: 'Sponsor Talks', 
-				details: 'Hear from our amazing sponsors!', 
-			}, 
-			{ 
-				time: '10:00 AM', 
-				activity: 'Jeopardy Style CTF Opens (Virtual Option Available)', 
-				details: '', 
-			}, 
-			{ 
-				time: '12:30 PM', 
-				activity: 'Lunch', 
-				details: '', 
-			}, 
-			{ 
-				time: '5:00 PM', 
-				activity: 'In-person Rooms Close', 
-				details: '', 
-			}, 
-		], 
-	}, 
-	{ 
-		date: 'April 13th, 2025 (In-person)', 
-		events: [ 
-			{ 
-				time: '8:00 AM', 
-				activity: 'In-person Rooms Open', 
-				details: '', 
-			}, 
-			{ 
-				time: '10:00 AM', 
-				activity: 'Jeopardy Style CTF Closes', 
-				details: '', 
-			}, 
-			{ 
-				time: '10:00 AM-11:30 AM', 
-				activity: 'Jeopardy Style CTF Awards Ceremony', 
-				details: '', 
-			}, 
-			{ 
-				time: '11:30 AM-12:00 PM', 
-				activity: 'Castle Competition Explanation', 
-				details: 'Brief on the Purple Team competition (in person only)', 
-			}, 
-			{ 
-				time: '12:30 PM', 
-				activity: 'Castle Competition Begins (In-person Only)', 
-				details: '', 
-			}, 
-			{ 
-				time: '4:30 PM-5:00 PM', 
-				activity: 'Competition Closes; Award Ceremony', 
-				details: '', 
-			}, 
-		], 
-	}, 
+const scheduleData = [
+	{
+		date: 'April 12th, 2025 (In-person & Virtual)',
+		events: [
+			{
+				time: '8:00-8:30 AM',
+				activity: 'Welcome / Format Overview',
+				details: '',
+			},
+			{
+				time: '8:35-10:00 AM',
+				activity: 'Sponsor Talks',
+				details: 'Hear from our amazing sponsors!',
+			},
+			{
+				time: '10:00 AM',
+				activity: 'Jeopardy Style CTF Opens (Virtual Option Available)',
+				details: '',
+			},
+			{
+				time: '12:30 PM',
+				activity: 'Lunch',
+				details: '',
+			},
+			{
+				time: '5:00 PM',
+				activity: 'In-person Rooms Close',
+				details: '',
+			},
+		],
+	},
+	{
+		date: 'April 13th, 2025 (In-person)',
+		events: [
+			{
+				time: '8:00 AM',
+				activity: 'In-person Rooms Open',
+				details: '',
+			},
+			{
+				time: '10:00 AM',
+				activity: 'Jeopardy Style CTF Closes',
+				details: '',
+			},
+			{
+				time: '10:00 AM-11:30 AM',
+				activity: 'Jeopardy Style CTF Awards Ceremony',
+				details: '',
+			},
+			{
+				time: '11:30 AM-12:00 PM',
+				activity: 'Castle Competition Explanation',
+				details: 'Brief on the Purple Team competition (in person only)',
+			},
+			{
+				time: '12:30 PM',
+				activity: 'Castle Competition Begins (In-person Only)',
+				details: '',
+			},
+			{
+				time: '4:30 PM-5:00 PM',
+				activity: 'Competition Closes; Award Ceremony',
+				details: '',
+			},
+		],
+	},
 ];
 
 const studentFaqQuestions = [
@@ -111,7 +112,7 @@ const imageStyles = {
 const nonStudentFaqQuestions = [
 	{
 		title: '$ ./when',
-		description: 'The in person competition will take place April 13th.',
+		description: 'The in person competition will take place April 18th and 19th.',
 	},
 	{
 		title: '$ ./where',
@@ -127,11 +128,11 @@ const nonStudentFaqQuestions = [
 	},
 	{
 		title: '$ ./lodging',
-		description: 'CyberVT encourages all academic institutions to attend in-person. Lodging is not provided by CyberVT and students are encouraged to reach out to your club or school leadership for funding.',
+		description: 'Lodging is not provided by CyberVT and students are encouraged to reach out to your club or school leadership for funding.',
 	},
 	{
 		title: '$ ./team-size',
-		description: 'Teams will be limited to five people. However, multiple teams from the same university can compete.',
+		description: 'Teams will be limited to four people. However, multiple teams from the same university can compete.',
 	},
 
 ];
@@ -149,7 +150,10 @@ export default function Index() {
 			>
 				<Stack spacing={6}>
 					<Box textAlign='center'>
-						<Image src={summitImg as StaticImageData} />
+						<Image
+							src={hacktheairportImg as StaticImageData}
+							style={{ transform: 'scale(0.80)' }}
+						/>
 						<Typography variant='h4'>Welcome to Hacksburg</Typography>
 						<Typography variant='h4' fontFamily='monospace' style={{ overflowWrap: 'break-word' }}>
 							<Typewriter
@@ -179,15 +183,15 @@ export default function Index() {
 									<Typography>General Information</Typography>
 								</AccordionSummary>
 								<AccordionDetails>
-									SummitCTF is an annual Capture the Flag (CTF) competition hosted by the Cybersecurity Club at Virginia Tech (CyberVT). The next competition will have two events, one virtual and one in person.
+									SummitCTF is an annual Capture the Flag (CTF) competition hosted by the Cybersecurity Club at Virginia Tech (CyberVT). There is no virtual option this year.
 								</AccordionDetails>
 
 								<AccordionDetails>
-									The virtual event will be a standard jeopardy style CTF, with some unique more realistic challenges. The in person event will be a attack defense event with competitors fighting each other for control.
+									This year the competition theme is Hack the Airport. Along with the normal jeopardy style CTF, there will also be a first-of-its-kind airport red teaming component. More details will be revealed when you arrive.
 								</AccordionDetails>
 
 								<AccordionDetails>
-									The virtual competition will officially start on {studentCompetitionDateTime.toLocaleDateString()} and last 24 hours.
+									The competition will officially start on {studentCompetitionDateTime.toLocaleDateString()} and last 24 hours.
 								</AccordionDetails>
 							</Accordion>
 							<Accordion>
@@ -196,24 +200,7 @@ export default function Index() {
 									aria-controls='panel1a-content'
 									id='panel1a-header'
 								>
-									<Typography>Details For Virtual Event</Typography>
-								</AccordionSummary>
-								<AccordionDetails>
-									{studentFaqQuestions.map(it => (
-										<div key={it.title}>
-											<Typography mb={1} variant='h5' fontFamily='monospace'>{it.title}</Typography>
-											<Typography mb={2}>{it.description}</Typography>
-										</div>
-									))}
-								</AccordionDetails>
-							</Accordion>
-							<Accordion>
-								<AccordionSummary
-									expandIcon={<ExpandMoreIcon />}
-									aria-controls='panel1a-content'
-									id='panel1a-header'
-								>
-									<Typography>Details For In Person Event</Typography>
+									<Typography>Details For The Event</Typography>
 								</AccordionSummary>
 								<AccordionDetails>
 									{nonStudentFaqQuestions.map(it => (
@@ -228,10 +215,10 @@ export default function Index() {
 					</Stack>
 
 					<Stack spacing={2}>
-						<Typography variant='h5'>Registration</Typography>
+						<Typography variant='h5'>Registration Coming Soon</Typography>
 
-						<Divider variant='inset' />
-						<Button variant='outlined' target='_blank' href='https://forms.office.com/Pages/ResponsePage.aspx?id=hGiVYK0Q-kCGPU8yweOjemyRXAedrFJKug2Tcw5CJHFURVMxWDBUMlRQUzZZSVhQSTY0RjY0SzFWRi4u'>Register for Summit 2025</Button>
+						{/* <Divider variant='inset' /> */}
+						{/* <Button variant='outlined' target='_blank' href='https://forms.office.com/Pages/ResponsePage.aspx?id=hGiVYK0Q-kCGPU8yweOjemyRXAedrFJKug2Tcw5CJHFURVMxWDBUMlRQUzZZSVhQSTY0RjY0SzFWRi4u'>Register for Summit 2025</Button> */}
 					</Stack>
 
 					<Stack spacing={2}>
@@ -242,9 +229,9 @@ export default function Index() {
 					</Stack>
 
 					<Stack spacing={2}>
-						<Typography variant='h5'>Official Schedule</Typography>
+						<Typography variant='h5'>Official Schedule TBD</Typography>
 
-						<Divider variant='inset' />
+						{/* <Divider variant='inset' />
 
 						<TableContainer component={Paper}>
 							<Table>
@@ -272,113 +259,113 @@ export default function Index() {
 									</React.Fragment>
 								))}
 							</Table>
-						</TableContainer>
+						</TableContainer> */}
 
 					</Stack>
 
-<Stack spacing={2}>
-    <Typography variant='h5'>Sponsors</Typography>
-    <Divider variant='inset' />
-    <Grid container justifyContent='space-evenly' spacing={2}>
-        <Grid item xs={12} md={4}>
-            <Stack spacing={1}>
-                <Box display='flex' justifyContent='center' width='100%'>
-                    <Image src={triplePointImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
-                </Box>
-                <MuiLink href='https://www.triplepointsecurity.com/' target='_blank' rel='noreferrer'>
-                    <Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
-                        Triple Point Security
-                    </Typography>
-                </MuiLink>
-                <Typography textAlign='justify'>
-                    Platinum level sponsor. Triple Point Security is a cybersecurity company based in Leesburg, VA. They provide a variety of services to help clients protect their data and systems from cyber threats.
-                </Typography>
-            </Stack>
-        </Grid>
+					<Stack spacing={2}>
+						<Typography variant='h5'>Sponsors</Typography>
+						<Divider variant='inset' />
+						<Grid container justifyContent='space-evenly' spacing={2}>
+							<Grid item xs={12} md={4}>
+								<Stack spacing={1}>
+									<Box display='flex' justifyContent='center' width='100%'>
+										<Image src={triplePointImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+									</Box>
+									<MuiLink href='https://www.triplepointsecurity.com/' target='_blank' rel='noreferrer'>
+										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+											Triple Point Security
+										</Typography>
+									</MuiLink>
+									<Typography textAlign='justify'>
+										Platinum level sponsor. Triple Point Security is a cybersecurity company based in Leesburg, VA. They provide a variety of services to help clients protect their data and systems from cyber threats.
+									</Typography>
+								</Stack>
+							</Grid>
 
-        <Grid item xs={12} md={4}>
-            <Stack spacing={1}>
-                <Box display='flex' justifyContent='center' width='100%'>
-                    <Image src={percivalImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
-                </Box>
-                <MuiLink href='https://www.percivaleng.com' target='_blank' rel='noreferrer'>
-                    <Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
-                        Percival Engineering
-                    </Typography>
-                </MuiLink>
-                <Typography textAlign='justify'>
-                    Platinum level sponsor. Percival Engineering is a people first company focused on cyber, embedded, and critical/operational technology.
-                </Typography>
-            </Stack>
-        </Grid>
+							<Grid item xs={12} md={4}>
+								<Stack spacing={1}>
+									<Box display='flex' justifyContent='center' width='100%'>
+										<Image src={percivalImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+									</Box>
+									<MuiLink href='https://www.percivaleng.com' target='_blank' rel='noreferrer'>
+										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+											Percival Engineering
+										</Typography>
+									</MuiLink>
+									<Typography textAlign='justify'>
+										Platinum level sponsor. Percival Engineering is a people first company focused on cyber, embedded, and critical/operational technology.
+									</Typography>
+								</Stack>
+							</Grid>
 
-        <Grid item xs={12} md={4}>
-            <Stack spacing={1}>
-                <Box display='flex' justifyContent='center' width='100%'>
-                    <Image src={phantomImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
-                </Box>
-                <MuiLink href='https://phantomsec.tools/' target='_blank' rel='noreferrer'>
-                    <Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
-                        Phantom Security
-                    </Typography>
-                </MuiLink>
-                <Typography textAlign='justify'>
-                    Silver level sponsor. Phantom Security Group is founded by 3 recent Virginia Tech Graduates and develops elite Red Teaming tools such as EvadeX, ApeX, and Phantom Labs.
-                </Typography>
-            </Stack>
-        </Grid>
+							<Grid item xs={12} md={4}>
+								<Stack spacing={1}>
+									<Box display='flex' justifyContent='center' width='100%'>
+										<Image src={phantomImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+									</Box>
+									<MuiLink href='https://phantomsec.tools/' target='_blank' rel='noreferrer'>
+										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+											Phantom Security
+										</Typography>
+									</MuiLink>
+									<Typography textAlign='justify'>
+										Silver level sponsor. Phantom Security Group is founded by 3 recent Virginia Tech Graduates and develops elite Red Teaming tools such as EvadeX, ApeX, and Phantom Labs.
+									</Typography>
+								</Stack>
+							</Grid>
 
-        <Grid item xs={12} md={4}>
-            <Stack spacing={1}>
-                <Box display='flex' justifyContent='center' width='100%'>
-                    <Image src={anteanImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
-                </Box>
-                <MuiLink href='https://anteantech.com/' target='_blank' rel='noreferrer'>
-                    <Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
-                        Antean Technology
-                    </Typography>
-                </MuiLink>
-                <Typography textAlign='justify'>
-                    Silver level sponsor. Antean Technology provides simplistically scaled cyber compliance, IT services, and program management solutions with quality, agility, and transparency.
-                </Typography>
-            </Stack>
-        </Grid>
+							<Grid item xs={12} md={4}>
+								<Stack spacing={1}>
+									<Box display='flex' justifyContent='center' width='100%'>
+										<Image src={anteanImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+									</Box>
+									<MuiLink href='https://anteantech.com/' target='_blank' rel='noreferrer'>
+										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+											Antean Technology
+										</Typography>
+									</MuiLink>
+									<Typography textAlign='justify'>
+										Silver level sponsor. Antean Technology provides simplistically scaled cyber compliance, IT services, and program management solutions with quality, agility, and transparency.
+									</Typography>
+								</Stack>
+							</Grid>
 
-        <Grid item xs={12} md={4}>
-            <Stack spacing={1}>
-                <Box display='flex' justifyContent='center' width='100%'>
-                    <Image src={comptiaImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
-                </Box>
-                <MuiLink href='https://www.comptia.org/' target='_blank' rel='noreferrer'>
-                    <Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
-                        CompTIA
-                    </Typography>
-                </MuiLink>
-                <Typography textAlign='justify'>
-                    Silver level sponsor.
-                </Typography>
-            </Stack>
-        </Grid>
+							<Grid item xs={12} md={4}>
+								<Stack spacing={1}>
+									<Box display='flex' justifyContent='center' width='100%'>
+										<Image src={comptiaImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+									</Box>
+									<MuiLink href='https://www.comptia.org/' target='_blank' rel='noreferrer'>
+										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+											CompTIA
+										</Typography>
+									</MuiLink>
+									<Typography textAlign='justify'>
+										Silver level sponsor.
+									</Typography>
+								</Stack>
+							</Grid>
 
-        <Grid item xs={12} md={4}>
-            <Stack spacing={1}>
-                <Box display='flex' justifyContent='center' width='100%'>
-                    <Image src={tcmSecurityImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
-                </Box>
-                <MuiLink href='https://tcm-sec.com/' target='_blank' rel='noreferrer'>
-                    <Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
-                        TCM Security
-                    </Typography>
-                </MuiLink>
-                <Typography textAlign='justify'>
-                    Silver level sponsor.
-                </Typography>
-            </Stack>
-        </Grid>
-    </Grid>
-</Stack>
-                </Stack>
-            </Box>
-        </div>
-    );
+							<Grid item xs={12} md={4}>
+								<Stack spacing={1}>
+									<Box display='flex' justifyContent='center' width='100%'>
+										<Image src={tcmSecurityImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+									</Box>
+									<MuiLink href='https://tcm-sec.com/' target='_blank' rel='noreferrer'>
+										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+											TCM Security
+										</Typography>
+									</MuiLink>
+									<Typography textAlign='justify'>
+										Silver level sponsor.
+									</Typography>
+								</Stack>
+							</Grid>
+						</Grid>
+					</Stack>
+				</Stack>
+			</Box>
+		</div>
+	);
 }

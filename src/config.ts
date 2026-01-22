@@ -35,7 +35,7 @@ export const cybervtTheme = createTheme({
 	},
 	palette: {
 		background: {
-			default: '#6f1d1b',
+			default: '#000000',
 		},
 		mode: 'dark',
 	},
@@ -53,11 +53,11 @@ export const globalContext = React.createContext<GlobalVars>({
 } as GlobalVars);
 
 /** Site title (in <head>) */
-export const siteTitle = 'CyberVT Summit CTF 2025';
+export const siteTitle = 'CyberVT Summit CTF 2026';
 
 /** Competition date & time */
 export const studentCompetitionDateTime = new Date(0);
-studentCompetitionDateTime.setUTCSeconds(1_744_466_400);
+studentCompetitionDateTime.setUTCSeconds(1_776_556_800);
 
 export const competitionDateTime = new Date(0);
 competitionDateTime.setUTCSeconds(1_744_552_800);
