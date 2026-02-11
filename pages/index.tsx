@@ -9,6 +9,7 @@ import { competitionDateTime, studentCompetitionDateTime } from '../src/config';
 import summitImg from '../public/img/default-monochrome-white.svg';
 import hacktheairportImg from '../public/img/hacktheairport.png';
 import comptiaImg from '../public/img/Comptia-logo.svg.png';
+import smcciImg from '../public/img/smcci.png';
 import triplePointImg from '../public/img/triplepointsecurity.png';
 import percivalImg from '../public/img/percival-logo-new-no-bg.png';
 import northropImg from '../public/img/northropgrumman.png';
@@ -271,6 +272,22 @@ export default function Index() {
 						<Typography variant='h5'>Sponsors</Typography>
 						<Divider variant='inset' />
 						<Grid container justifyContent='space-evenly' spacing={2}>
+							<Grid item xs={12} md={4}>
+								<Stack spacing={1}>
+									<Box display='flex' justifyContent='center' width='100%'>
+										<Image src={smcciImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+									</Box>
+									<MuiLink href='https://hume.vt.edu/undergraduate-education/workforce-development-programs/smc.html' target='_blank' rel='noreferrer'>
+										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+											DoD Senior Military College Cyber Institute (SMCCI)
+										</Typography>
+									</MuiLink>
+									<Typography textAlign='justify'>
+										Diamond level sponsor. The Department of Defense Senior Military College Cyber Institute (SMCCI) aims to inspire and mentor undergraduate students interested in pursuing cyber-related careers with the Department of Defense (DoD) either as civilians or uniformed service members.
+									</Typography>
+								</Stack>
+							</Grid>
+
 							<Grid item xs={12} md={4}>
 								<Stack spacing={1}>
 									<Box display='flex' justifyContent='center' width='100%'>
