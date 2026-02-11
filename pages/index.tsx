@@ -116,7 +116,7 @@ const nonStudentFaqQuestions = [
 	},
 	{
 		title: '$ ./where',
-		description: 'The in person portion of the competition will be hosted on the Virginia Tech Campus, exact location will be shared at a later time.',
+		description: 'The in person portion of the competition will be hosted on the Virginia Tech Campus, in the <a href="https://www.vt.edu/about/locations/buildings/data-and-decision-sciences.html" target="_blank" rel="noreferrer">Data and Decision Sciences Building</a>.',
 	},
 	{
 		title: '$ ./prizes',
@@ -125,6 +125,10 @@ const nonStudentFaqQuestions = [
 	{
 		title: '$ ./eligibility',
 		description: 'Current student at an academic university.',
+	},
+	{
+		title: '$ ./cost',
+		description: 'Early bird registration is $10. After March 18, regular registration is $15',
 	},
 	{
 		title: '$ ./lodging',
@@ -218,7 +222,7 @@ export default function Index() {
 						<Typography variant='h5'>Registration</Typography>
 
 						<Divider variant='inset' />
-						<Button variant='outlined' target='_blank' href='https://forms.office.com/Pages/ResponsePage.aspx?id=hGiVYK0Q-kCGPU8yweOjetZwjjQal5JLkE9gRGnwggBURDdDWVoyN1BTTEM0MUYzRjdERTdCQkpGRy4u'>Register for Summit 2026</Button>
+						<Button variant='outlined' target='_blank' href='https://www.eventbrite.com/e/summitctf-2026-tickets-1982439422679?aff=ebdssbdestsearch'>Register for Summit 2026</Button>
 					</Stack>
 
 					<Stack spacing={2}>
