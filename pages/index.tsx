@@ -335,54 +335,7 @@ export default function Index() {
 									</Typography>
 								</Stack>
 							</Grid>
-
-							<Grid item xs={12} md={4}>
-								<Stack spacing={1}>
-									<Box display='flex' justifyContent='center' width='100%'>
-										<Image src={anteanImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
-									</Box>
-									<MuiLink href='https://anteantech.com/' target='_blank' rel='noreferrer'>
-										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
-											Antean Technology
-										</Typography>
-									</MuiLink>
-									<Typography textAlign='justify'>
-										Silver level sponsor. Antean Technology provides simplistically scaled cyber compliance, IT services, and program management solutions with quality, agility, and transparency.
-									</Typography>
-								</Stack>
-							</Grid>
-
-							<Grid item xs={12} md={4}>
-								<Stack spacing={1}>
-									<Box display='flex' justifyContent='center' width='100%'>
-										<Image src={comptiaImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
-									</Box>
-									<MuiLink href='https://www.comptia.org/' target='_blank' rel='noreferrer'>
-										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
-											CompTIA
-										</Typography>
-									</MuiLink>
-									<Typography textAlign='justify'>
-										Silver level sponsor.
-									</Typography>
-								</Stack>
-							</Grid>
-
-							<Grid item xs={12} md={4}>
-								<Stack spacing={1}>
-									<Box display='flex' justifyContent='center' width='100%'>
-										<Image src={tcmSecurityImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
-									</Box>
-									<MuiLink href='https://tcm-sec.com/' target='_blank' rel='noreferrer'>
-										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
-											TCM Security
-										</Typography>
-									</MuiLink>
-									<Typography textAlign='justify'>
-										Silver level sponsor.
-									</Typography>
-								</Stack>
-							</Grid>
+														
 						</Grid>
 					</Stack>
 				</Stack>
