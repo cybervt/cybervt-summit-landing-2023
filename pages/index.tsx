@@ -10,6 +10,7 @@ import summitImg from '../public/img/default-monochrome-white.svg';
 import hacktheairportImg from '../public/img/hacktheairport.png';
 import comptiaImg from '../public/img/Comptia-logo.svg.png';
 import smcciImg from '../public/img/smcci.png';
+import smcciImg from '../public/img/hii.png';
 import triplePointImg from '../public/img/triplepointsecurity.png';
 import percivalImg from '../public/img/percival-logo-new-no-bg.png';
 import northropImg from '../public/img/northropgrumman.png';
@@ -299,7 +300,23 @@ export default function Index() {
 										</Typography>
 									</MuiLink>
 									<Typography textAlign='justify'>
-										Platinum level sponsor. Triple Point Security is a cybersecurity company based in Leesburg, VA. They provide a variety of services to help clients protect their data and systems from cyber threats.
+										Diamond level sponsor. Triple Point Security is a cybersecurity company based in Leesburg, VA. They provide a variety of services to help clients protect their data and systems from cyber threats.
+									</Typography>
+								</Stack>
+							</Grid>
+
+							<Grid item xs={12} md={4}>
+								<Stack spacing={1}>
+									<Box display='flex' justifyContent='center' width='100%'>
+										<Image src={hiiImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+									</Box>
+									<MuiLink href='https://www.percivaleng.com' target='_blank' rel='noreferrer'>
+										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+											HII MT
+										</Typography>
+									</MuiLink>
+									<Typography textAlign='justify'>
+										Gold level sponsor. HII is a global engineering and defense technologies provider, and recognized worldwide as America’s largest shipbuilder.
 									</Typography>
 								</Stack>
 							</Grid>
@@ -315,7 +332,7 @@ export default function Index() {
 										</Typography>
 									</MuiLink>
 									<Typography textAlign='justify'>
-										Platinum level sponsor. Percival Engineering is a people first company focused on cyber, embedded, and critical/operational technology.
+										Silver level sponsor. Percival Engineering is a people first company focused on cyber, embedded, and critical/operational technology.
 									</Typography>
 								</Stack>
 							</Grid>
@@ -331,7 +348,7 @@ export default function Index() {
 										</Typography>
 									</MuiLink>
 									<Typography textAlign='justify'>
-										Silver level sponsor. Phantom Security Group is founded by 3 recent Virginia Tech Graduates and develops elite Red Teaming tools such as EvadeX, ApeX, and Phantom Labs.
+										Bronze level sponsor. Phantom Security Group is founded by 3 recent Virginia Tech Graduates and develops elite Red Teaming tools such as EvadeX, ApeX, and Phantom Labs.
 									</Typography>
 								</Stack>
 							</Grid>
