@@ -10,7 +10,7 @@ import summitImg from '../public/img/default-monochrome-white.svg';
 import hacktheairportImg from '../public/img/hacktheairport.png';
 import comptiaImg from '../public/img/Comptia-logo.svg.png';
 import smcciImg from '../public/img/smcci.png';
-import smcciImg from '../public/img/hii.png';
+import hiiImg from '../public/img/hii.png';
 import triplePointImg from '../public/img/triplepointsecurity.png';
 import percivalImg from '../public/img/percival-logo-new-no-bg.png';
 import northropImg from '../public/img/northropgrumman.png';
