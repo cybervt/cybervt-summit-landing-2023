@@ -212,7 +212,12 @@ export default function Index() {
 									{nonStudentFaqQuestions.map(it => (
 										<div key={it.title}>
 											<Typography mb={1} variant='h5' fontFamily='monospace'>{it.title}</Typography>
-											<Typography mb={2}>{it.description}</Typography>
+											<Typography
+											  mb={2}
+											  component="div"
+											  dangerouslySetInnerHTML={{ __html: it.description }}
+											/>
+
 										</div>
 									))}
 								</AccordionDetails>
