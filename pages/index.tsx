@@ -315,7 +315,7 @@ export default function Index() {
 									<Box display='flex' justifyContent='center' width='100%'>
 										<Image src={hiiImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
 									</Box>
-									<MuiLink href='https://www.percivaleng.com' target='_blank' rel='noreferrer'>
+									<MuiLink href='https://hii.com' target='_blank' rel='noreferrer'>
 										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
 											HII MT
 										</Typography>
@@ -337,7 +337,7 @@ export default function Index() {
 										</Typography>
 									</MuiLink>
 									<Typography textAlign='justify'>
-										Silver level sponsor. Percival Engineering is a people first company focused on cyber, embedded, and critical/operational technology.
+										Gold level sponsor. Percival Engineering is a people first company focused on cyber, embedded, and critical/operational technology.
 									</Typography>
 								</Stack>
 							</Grid>
