@@ -126,7 +126,7 @@ const nonStudentFaqQuestions = [
 	},
 	{
 		title: '$ ./eligibility',
-		description: 'Current student at an academic university.',
+		description: 'Current student at a university or community college.',
 	},
 	{
 		title: '$ ./cost',
@@ -134,7 +134,7 @@ const nonStudentFaqQuestions = [
 	},
 	{
 		title: '$ ./lodging',
-		description: 'Lodging is not provided by CyberVT and students are encouraged to reach out to your club or school leadership for funding.',
+		description: 'Lodging is not provided by CyberVT and students are encouraged to reach out to your club or school leadership for funding. We have a special rate of $159/night available at the Virginia Tech Inn, which can be booked using <a href="https://be.synxis.com/?Hotel=32532&Chain=5388&arrive=2026-04-17&depart=2026-04-19&adult=1&child=0&group=SUM9999">this link</a>',
 	},
 	{
 		title: '$ ./team-size',
