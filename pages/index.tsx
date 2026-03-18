@@ -130,7 +130,7 @@ const nonStudentFaqQuestions = [
 	},
 	{
 		title: '$ ./cost',
-		description: 'Early bird registration is $10. After March 18, regular registration is $15',
+		description: 'Early bird registration is $10. After March 31st, regular registration is $15.',
 	},
 	{
 		title: '$ ./lodging',
