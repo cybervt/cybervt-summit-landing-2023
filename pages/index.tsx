@@ -147,7 +147,9 @@ const nonStudentFaqQuestions = [
 export default function Index() {
 	return (
 		<div>
-			<Head>SummitCTF 2026</Head>
+			<Head>
+				<title>SummitCTF 2026</title>
+			</Head>
 			<Box
 				width='100%'
 				height='100%'
