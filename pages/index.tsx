@@ -2,6 +2,7 @@ import { Typography, Stack, Link as MuiLink, Box, Button, AccordionSummary, Acco
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import React from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 import Typewriter from 'typewriter-effect';
 import Accordion from '@mui/material/Accordion';
 import Image, { StaticImageData } from 'next/image';
@@ -146,6 +147,7 @@ const nonStudentFaqQuestions = [
 export default function Index() {
 	return (
 		<div>
+			<Head>SummitCTF 2026</Head>
 			<Box
 				width='100%'
 				height='100%'
