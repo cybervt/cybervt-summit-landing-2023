@@ -349,6 +349,22 @@ export default function Index() {
 							<Grid item xs={12} md={4}>
 								<Stack spacing={1}>
 									<Box display='flex' justifyContent='center' width='100%'>
+										<Image src={comptiaImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+									</Box>
+									<MuiLink href='https://www.comptia.org/' target='_blank' rel='noreferrer'>
+										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+											CompTIA
+										</Typography>
+									</MuiLink>
+									<Typography textAlign='justify'>
+										Gold level sponsor. CompTIA helps students, professionals, and career changers unlock their full potential by providing the tools to succeed as they begin or progress in a career in technology.
+									</Typography>
+								</Stack>
+							</Grid>
+
+							<Grid item xs={12} md={4}>
+								<Stack spacing={1}>
+									<Box display='flex' justifyContent='center' width='100%'>
 										<Image src={phantomImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
 									</Box>
 									<MuiLink href='https://phantomsec.tools/' target='_blank' rel='noreferrer'>
