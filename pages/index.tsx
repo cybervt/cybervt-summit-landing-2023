@@ -19,6 +19,9 @@ import corpsImg from '../public/img/22_Corps_Shield_FullColor_RGB.png';
 import anteanImg from '../public/img/Antean-Final.png';
 import phantomImg from '../public/img/PhantomImg.png';
 import tcmSecurityImg from '../public/img/TCMSecurityImg.png';
+import cciImg from '../public/img/CCI.png';
+import eccouncilImg from '../public/img/EC-Council.jpg';
+import vacrImg from '../public/img/vacr.svg';
 
 const scheduleData = [
 	{
@@ -365,15 +368,47 @@ export default function Index() {
 							<Grid item xs={12} md={4}>
 								<Stack spacing={1}>
 									<Box display='flex' justifyContent='center' width='100%'>
-										<Image src={phantomImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+										<Image src={cciImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
 									</Box>
-									<MuiLink href='https://phantomsec.tools/' target='_blank' rel='noreferrer'>
+									<MuiLink href='https://cyberinitiative-swva.org/' target='_blank' rel='noreferrer'>
 										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
-											Phantom Security
+											Commonwealth Cyber Initiative Southwest Virginia
 										</Typography>
 									</MuiLink>
 									<Typography textAlign='justify'>
-										Bronze level sponsor. Phantom Security Group is founded by 3 recent Virginia Tech Graduates and develops elite Red Teaming tools such as EvadeX, ApeX, and Phantom Labs.
+										Silver level sponsor. CCI SWVA is one of the four regional nodes of the Commonwealth Cyber Initiative (CCI), which was founded in 2019 to establish Virginia as a global center of excellence at the intersection of cybersecurity, autonomy, and intelligence.
+									</Typography>
+								</Stack>
+							</Grid>
+
+							<Grid item xs={12} md={4}>
+								<Stack spacing={1}>
+									<Box display='flex' justifyContent='center' width='100%'>
+										<Image src={eccouncilImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+									</Box>
+									<MuiLink href='https://www.eccouncil.org/' target='_blank' rel='noreferrer'>
+										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+											EC-Council
+										</Typography>
+									</MuiLink>
+									<Typography textAlign='justify'>
+										Silver level sponsor. EC-Council offers globally recognized certifications to help you advance your career in today’s cyber landscape.
+									</Typography>
+								</Stack>
+							</Grid>
+
+							<Grid item xs={12} md={4}>
+								<Stack spacing={1}>
+									<Box display='flex' justifyContent='center' width='100%'>
+										<Image src={vacrImg as StaticImageData} width='300px' height='100%' objectFit='contain' />
+									</Box>
+									<MuiLink href='https://www.virginiacyberrange.org/' target='_blank' rel='noreferrer'>
+										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.primary'>
+											Virginia Cyber Range
+										</Typography>
+									</MuiLink>
+									<Typography textAlign='justify'>
+										Bronze level sponsor. The Virginia Cyber Range is a Commonwealth of Virginia initiative with a mission to enhance cybersecurity education for students in the Commonwealth’s public high schools, colleges, and universities.
 									</Typography>
 								</Stack>
 							</Grid>
